@@ -1,0 +1,412 @@
+*
+{
+    margin:0;
+    padding:0;
+    font-family:sans-serif;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+.body1
+{
+    position:relative;
+    width:100%;
+    height:70vh;
+    background: white;
+    margin-bottom:-2rem;
+}
+.navbar
+{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding:0 7rem;
+    position:fixed;
+    width:90%;
+    overflow:hidden;
+    top:0;
+    z-index:100;
+    border-bottom:0.3vw solid black;
+}
+.hello
+{
+    font-size:20px;
+    color:white;
+    font-weight: bold;
+}
+.hello span
+{
+    font-size:24px;
+    color:white;
+    font-weight: bold;
+    cursor:pointer;
+}
+.hello span:hover
+{
+    color:rgb(0, 0, 0);
+}
+.navbar ul
+{
+    display:flex;
+    list-style:none;
+    margin:20px 0px;
+}
+.navbar ul li
+{
+    font-family: century;
+    font-size: 1.1rem;
+    font-weight:bold;
+}
+.navbar ul li a
+{
+    text-decoration:none;
+    color:white;
+    padding:8px 25px;
+    transition:all .5s ease;
+}
+.navbar ul li a:hover
+{
+    background-color:white;
+    color:black;
+    box-shadow: 0 0 10px white;
+}
+.details
+{
+    width:50%;
+    margin-left:8%;
+    margin-top:12%;
+}
+h1
+{
+    font-size:46px;
+    color:black;
+    margin-bottom:20px;
+    margin-top:12rem;
+}
+h1 span
+{
+    color:rgb(248, 6, 6);
+    font-size:56px;
+}
+.details p
+{
+    font-size:18px;
+    letter-spacing:2.2px;
+    line-height:25px;
+}
+.details a
+{
+    background:black;
+    padding:10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color:white;
+    display:inline-block;
+    margin:30px 0;
+    border-radius: 5px;
+}
+.details a:hover
+{
+    background: white;
+    color:black;
+}
+.image
+{
+    width:35%;
+    height:80%;
+    position:absolute;
+    top:40px;
+    bottom:0;
+    right:100px;
+}
+.image img
+{
+    height:100%;
+    position:absolute;
+    left:50%;
+    bottom:0;
+    transform:translateX(-50%);
+    transition:bottom 1s,left 1s;
+}
+img.shape 
+{
+    width: 319px;
+    height: 480px;
+}
+img.picture
+{
+    width:270px;
+    height:477px;
+}
+.image:hover .shape
+{
+    bottom:40px;
+}
+.image:hover .picture
+{
+    left:45%;
+}
+#home
+{
+    border: 2px solid black;
+    height:26rem;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+
+#about
+{
+    margin-left:8%;
+}
+.headings
+{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top:3%;
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 35px;
+}
+#about h3
+{
+    font-size: medium;
+    letter-spacing:2.2px;
+    line-height:25px;
+}
+#about a
+{
+    background:black;
+    padding:10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color:white;
+    display:inline-block;
+    margin:30px 0;
+    border-radius: 5px;
+}
+#about a:hover
+{
+    background-color:gray;
+    color:black;
+}
+
+
+#skills
+{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+}
+.container
+{
+    align-items: center;
+    gap: 2rem;
+    width:70%;
+}
+.contain-box 
+{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+}
+.contain-box h3,span 
+{
+    font-size: 1.1rem;
+    font-weight: 500;
+    color:black;
+}
+.light-bar 
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.5rem;
+    background: hsla(260, 100%, 44%, 0.4);
+    border-radius: 0.5rem;
+}
+.percent-bar 
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 0.5rem;
+    background: darkblue;
+    border-radius: 0.5rem;
+}
+.html-bar 
+{
+    width: 90%;
+}
+.css-bar 
+{
+    width: 80%;
+}
+.js-bar 
+{
+    width: 70%;
+}
+.react-bar 
+{
+    width: 75%;
+}
+
+
+#services
+{
+    display:flex;
+    flex-direction:column;
+    padding:20px 5.5rem;
+}
+#services h2
+{
+    margin-left: 17px;
+    margin-bottom: 1rem;
+}
+.head
+{
+    margin:1rem 0;
+    font-size: 20px;
+}
+.row
+{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+    box-sizing: border-box;
+}
+.box
+{
+    display:flex;
+    flex-direction: column;
+    width:344px;
+    height:450px;
+    border:1px solid black;
+    margin:10px;
+    align-items: center;
+    text-align: center;
+    padding:10px;
+    border-radius: 15px;
+    background: linear-gradient(to top, rgb(255,45,45) 50%, white 50%);
+    background-size: 100% 200%;
+    transition:all .8s;
+}
+.box p
+{
+    line-height: 1.8;
+}
+.box:hover
+{
+    background-position: left bottom;
+    color:white;
+    border:none;
+    box-shadow:0 0 20px rgb(255,45,45);
+}
+.box img
+{
+    width:350px;
+    height:150px;
+}
+
+
+#contact
+{
+    display:flex;
+    flex-direction: column;
+    box-sizing:border-box;
+    background-color: rgba(0, 0, 0, 0.9);
+    color:white;
+}
+#contact h2 
+{
+    text-align: center;
+    margin-bottom: 1rem;
+    color:white;
+}
+.form
+{
+    display:flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+    margin:20px 0px;
+}
+.input
+{
+    padding:12px;
+    margin:15px;
+    width:24%;
+    border:none;
+    outline:none;
+}
+#msg
+{
+    width:24%;
+    padding:10px;
+    margin:15px;
+    border:none;
+    outline:none;
+}
+#send
+{
+    padding:10px;
+    width:10%;
+    font-size: 15px;
+    margin:40px;
+    border:none;
+    outline:none;
+}
+#send:hover
+{
+    cursor:pointer;
+    box-shadow: 0 0 10px white;
+}
+
+
+.footer
+{
+    display:grid;
+    place-items: center;
+    padding:20px;
+    color:white;
+    background-color: rgba(54, 53, 53, 0.9);
+}
+.footer h2
+{
+    font-size: 1.5rem;
+    margin-bottom: 1.6rem;
+}
+.icons a
+{
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+}
+.icons ion-icon
+{
+    color:rgb(255, 253, 253);
+    font-size: 30px;
+    padding-left:14px;
+    padding-top:5px;
+    transition:0.3s ease;
+    display:inline-block;
+}
+.icons ion-icon:hover
+{
+    color:rgb(14, 13, 13);
+}
+
+
+.copyright
+{
+    color:rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.9);
+    padding:20px;
+    text-align:center;
+}
